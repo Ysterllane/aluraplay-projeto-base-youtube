@@ -62,6 +62,13 @@
     gap: 15px /*propriedade do flexbox*/
 }
 
+/* VIDEO */
+
+.videos__item{
+    width: 280px;
+    height: 303px;
+}
+
 /* RODAPÉ */
 
 .rodape__container{
@@ -121,5 +128,36 @@
 
     .menu__lista{
         padding: 20px 17px 20px 15px;
+        height: auto;
+        overflow: scroll;
+        gap: 15px;
+    }
+
+    .menu__itens{
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .menu__lista:nth-child(3){
+        flex-direction: column-reverse;
+    }
+
+    /* ORDER permite organizar a ordem de cada elemento do container */
+
+    .premium{
+       order: 1;
+    }
+
+    .filmes{
+       order: 2;
+    }
+
+    .jogos{
+        order: 3;
+    }
+
+    .maispagina{
+        order: 4;
     }
 }
